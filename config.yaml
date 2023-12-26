@@ -1,0 +1,21 @@
+bach_size: 2
+device: "cpu"
+
+
+
+train:
+  data_dir: "D:\\data_test"
+  batch_size: 2
+  image_size: 150
+  num_epochs: 100
+  print_freq: 10
+  learning_rate: 0.001
+  learning_schedule: 20000
+
+val:
+  data_dir: "D:\\data_test"
+  batch_size: 2
+  image_size: 150
+  print_freq: 10
+  save_freq: 20
+  save_dir: "experiment/models"

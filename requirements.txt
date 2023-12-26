@@ -1,0 +1,5 @@
+torch
+yaml
+torchvision
+Pillow
+tqdm
