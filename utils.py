@@ -15,7 +15,7 @@ def caculate_metrix(model,dataloader,device,loss_fn):
     model.eval()
     with torch.no_grad():
         for x,y in dataloader:
-            count += x.shape[0]
+            count+=1
             x,y = x.to(device),y.to(device)
             y_pred = model(x)
             loss+= loss_fn(y_pred,y).item()

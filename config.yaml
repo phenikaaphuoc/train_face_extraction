@@ -1,21 +1,19 @@
 bach_size: 2
-device: "cpu"
-
-
-
+device: "cuda"
 train:
-  data_dir: "D:\\data_test"
-  batch_size: 2
+  data_dir: "/work/21013187/face_id/facescrub-dataset/150x150/train/"
+  batch_size: 64
   image_size: 150
-  num_epochs: 100
-  print_freq: 10
+  num_epochs: 20
+  print_freq: 100
   learning_rate: 0.001
-  learning_schedule: 20000
-
+  learning_schedule: 2500
+  weight_decay: 0.0005
+pretrained_path: /work/21013187/train_face_extraction/experiment/models/12500_2.6153258400804855_.pth 
 val:
-  data_dir: "D:\\data_test"
-  batch_size: 2
+  data_dir: "/work/21013187/face_id/facescrub-dataset/150x150/validate/"
+  batch_size: 64
   image_size: 150
-  print_freq: 10
-  save_freq: 20
+  print_freq: 500
+  save_freq: 500
   save_dir: "experiment/models"

@@ -1,3 +1,3 @@
 from model import Model
 
-model = Model(r"D:\pythonProject\face_id\config.yaml")
+model = Model(r"/work/21013187/train_face_extraction/config.yaml")

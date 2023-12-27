@@ -40,7 +40,7 @@ class CustomDataset(Dataset):
 
 
 def get_dataloader(opt,train = True):
-    if train:
+    if not train:
         transform = transforms.Compose([
             transforms.Resize((opt['image_size'], opt['image_size'])),  # Resize the image to the desired size
             transforms.ToTensor(),  # Convert the image to a PyTorch tensor
